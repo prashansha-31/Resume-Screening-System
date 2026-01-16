@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Resume Screening</title>
+</head>
+<body>
+    <h2>AI Resume Screening System</h2>
+
+    <form action="/predict" method="post" enctype="multipart/form-data">
+        <label>Upload Resume (PDF):</label><br>
+        <input type="file" name="resume" required><br><br>
+
+        <label>Job Description:</label><br>
+        <textarea name="job_desc" rows="6" cols="50"
+                  placeholder="Paste job description here"
+                  required></textarea><br><br>
+
+        <button type="submit">Check Resume</button>
+    </form>
+</body>
+</html>
